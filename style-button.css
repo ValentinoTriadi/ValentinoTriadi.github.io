@@ -3,9 +3,9 @@
     border: none;
     cursor: pointer;
     background: rgba(0,0,0,0.09);
-    border-radius: 10px;
-    width: 1500px;
-    height: 450px;
+    border-radius: 5px;
+    width: 375px;
+    height: 112.5px;
     text-decoration: none;
 }
 .top-button{
@@ -16,7 +16,7 @@
 .invis-button::before, .invis-button::after{
     content:"";
     width: 0;
-    height: 5px;
+    height: 1px;
     position: absolute;
     transition: all 0.2s linear;
     background: #fff;
@@ -24,7 +24,7 @@
 
 .top-button::before, .top-button::after{
     content:"";
-    width:5px;
+    width:1px;
     height:0;
     position: absolute;
     transition: all 0.2s linear;
@@ -63,17 +63,4 @@
 }
 .invis-button:hover span::before, .invis-button:hover span::after{
     transition-delay: 0.2s;
-}
-
-
-
-.github1 {
-    width: 1000px;
-    height: 500px;
-    color: red;
-}
-.github1 a {
-    width: 1000px;
-    height: 500px;
-    background-color: red;
 }
