@@ -1,0 +1,79 @@
+.invis-button{
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    background: rgba(0,0,0,0.09);
+    border-radius: 10px;
+    width: 1500px;
+    height: 450px;
+    text-decoration: none;
+}
+.top-button{
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+.invis-button::before, .invis-button::after{
+    content:"";
+    width: 0;
+    height: 5px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+}
+
+.top-button::before, .top-button::after{
+    content:"";
+    width:5px;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+}
+.invis-button:hover::before, .invis-button:hover::after{
+    width: 100%;
+}
+.invis-button:hover .top-button::before, .invis-button:hover .top-button::after{
+    height: 100%;
+}
+.invis-button::before, .invis-button::after{
+    transition-delay: 0.2s;
+}
+.invis-button .top-button::before, .invis-button .top-button::after{
+    transition-delay: 0s;
+}
+.invis-button::before{
+    right: 0;
+    top: 0;
+}
+.invis-button::after{
+    left: 0;
+    bottom: 0;
+}
+.invis-button span::before{
+    left: 0;
+    top: 0;
+}
+.invis-button span::after{
+    right: 0;
+    bottom: 0;
+}
+.invis-button:hover::before, .invis-button:hover::after{
+    transition-delay: 0s;
+}
+.invis-button:hover span::before, .invis-button:hover span::after{
+    transition-delay: 0.2s;
+}
+
+
+
+.github1 {
+    width: 1000px;
+    height: 500px;
+    color: red;
+}
+.github1 a {
+    width: 1000px;
+    height: 500px;
+    background-color: red;
+}

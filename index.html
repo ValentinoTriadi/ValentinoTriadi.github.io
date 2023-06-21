@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/1ffdd10224.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+
+
+
+
+    <nav class="navbar" id="navbar">
+        <h1 class="pagename">MyPorto</h1>
+        <ul>
+            <li><a href="#C1" id="a1" class="navactive" onclick="activeClass('a1')">Home</a></li>
+            <li><a href="#C2" id="a2" class="" onclick="activeClass('a2')">Profile</a></li>
+            <li><a href="#C3" id="a3" class="" onclick="activeClass('a3')">Portofolio</a></li>
+            <li><a href="#C4" id="a4"class="" onclick="activeClass('a4')">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="navmenu">
+        <h1 class="pagename">MyPorto</h1>
+        <div class="menuIcon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <ul>
+                <li style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><a href="#C1" id="a1" ><img src="../assets/navbar/homeIcon-01.png" alt=""></a></li>
+                <li><a href="#C2" id="a2"><img src="../assets/navbar/profileicon-01.png" alt=""></a></li>
+                <li><a href="#C3" id="a3"><img src="../assets/navbar/portoIcon-01.png" alt=""></a></li>
+                <li style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;"><a href="#C4" id="a4"><img src="../assets/navbar/contactIcon-01.png" alt=""></a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+
+
+
+
+
+    <section class="profile" id="C1">
+        <div class="container" onmouseover="changeToBlack()" onmouseout="hoverOut()">
+            <img src="../assets/C1/FotoAku-01.png" alt="" class="box" id="box">
+            <link rel="stylesheet" href="style-button.css">
+            <button class="invis-button" id="invis-button" onclick="smoothScroll('#C2')" >
+                <span class="top-button">
+                    <h2 class="button1-head">Hey! Wanna know more about me?</h2>
+                    <h3 class="button1-tail">(click me)</h3>
+                </span>
+            </button>
+        </div>
+        <div class="nameContainer">
+            <h1 class="nama">Valentino Chryslie Triadi</h1>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section id="C2">
+        <div>
+            <h1>Profile</h1>
+        </div>
+        <div class="pro-img-container">
+            <div class="profileContainer">
+                <div class="profile1">
+                    <ul>
+                        <li><img src="../assets/C2/nama-01.png" alt="Full Name"> <h2>Valentino Chryslie Triadi</h2></li>
+                        <li><img src="../assets/C2/tanggal-01.png" alt="Date of Birth"> <h2>26 November 2004</h2></li>
+                        <li><img src="../assets/C2/lokasi-01.png" alt="Birthplace"> <h2>Kudus, Central Java, Indonesia</h2></li>
+                        <li><img src="../assets/C2/kuliah-01.png" alt="College"> <h2>Bandung Institute of Technology<br>School of Electrical Engineering and Informatics</h2></li>
+                    </ul>
+                </div>
+                <div class="profile2">
+                    <ul>
+                        <li><img src="../assets/C2/organisasi-01.png" alt="Organisation"></li>
+                        <li><h2>Komisi C MPK SMAN 1 Kudus (19/20) •</h2></li>
+                        <li><h2>Wakil Ketua MPK SMAN 1 Kudus (20/21) •</h2></li>
+                        <li><h2>Unit Ganesha Interactive Media ITB •</h2></li>
+                        <li><h2>Panitia Wisuda Oktober ITB 2022 divisi Intrakampus •</h2></li>
+                    </ul>
+                </div>
+                <div class="profile3">
+                    <ul>
+                        <li><img src="../assets/C2/prestasi-01.png" alt="Organisation"></li>
+                        <li><h2>• Juara 1 OSN IPA SMP 2018 Tingkat Kabupaten (DISDIKPORA Kudus)</h2></li>
+                        <li><h2>• Juara 2 LCC SMP 2018 Tingkat Kabupaten (DISDIKPORA Kudus)</h2></li>
+                        <li><h2>• Juara 3 Kuis Kihajar SMP 2018 Tingkat Provinsi (DISDIKPORA Jawa Tengah)</h2></li>
+                        <li><h2>• Passing Grade KSN Fisika SMA 2020 Tingkat Kabupaten (DISDIKPORA Kudus)</h2></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="porto-image">
+                <div>
+                    <button onclick="smoothScroll('#C3')" >
+                        <h2>Wanna see my portofolio?</h2>
+                        <h3>(click me)</h3>
+                    </button>
+                </div>
+                <img src="../assets/C2/portoimg-01.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section id="C3">
+        <div>
+            <h1>Portofolio</h1>
+        </div>
+
+
+        <div class="portoContainer">
+
+            <div class="Project">
+                <div class="ProjectImgContainer1">
+                    <img src="../assets/C3/Dice/1.png" alt="" class="ProjectImage" id="FirstProject1">
+                </div>
+                <div class="ProjectImgContainer1">
+                    <img src="../assets/C3/Dice/2.png" alt="" class="ProjectImage" id="FirstProject3">
+                </div>
+                <div class="ProjectImgContainer1">
+                    <img src="../assets/C3/Dice/3.png" alt="" class="ProjectImage" id="FirstProject3">
+                </div>
+                <div class="ProjectImgContainer1">
+                    <img src="../assets/C3/Dice/4.png" alt="" class="ProjectImage" id="FirstProject1">
+                </div>
+                <div class="ProjectImgContainer1">
+                    <img src="../assets/C3/Dice/5.png" alt="" class="ProjectImage" id="FirstProject3">
+                </div>
+                <div class="ProjectImgContainer1">
+                    <img src="../assets/C3/Dice/6.png" alt="" class="ProjectImage" id="FirstProject3">
+                </div>
+
+                <div class="descContainer">
+                    <p class="ProjectDescription">Tugas Besar Mata Kuliah Pengenalan Komputasi Semester 1 (2022)  -<br>(mini-quiz-game)</p>
+                </div>
+
+                <button class="ProjectButton" onclick="firstProject()">Click Here!</button>
+            </div>
+
+            <div class="Project">
+                <div class="ProjectImgContainer2">
+                    <img src="../assets/C3/Candi/bondowoso.png" alt="" class="ProjectImage">
+                </div>
+                <div class="ProjectImgContainer2">
+                    <img src="../assets/C3/Candi/roro.png" alt="" class="ProjectImage">
+                </div>
+                <div class="ProjectImgContainer2">
+                    <img src="../assets/C3/Candi/jin.png" alt="" class="ProjectImage">
+                </div>
+
+                <div class="descContainer">
+                    <p class="ProjectDescription">Tugas Besar Mata Kuliah Dasar Pemrograman Semester 2 (2023)  -<br>Manajerial Candi</p>
+                </div>
+
+                <button class="ProjectButton" onclick="secondProject()">Click Here!</button>
+            </div>
+
+            <div class="Project">
+                <div class="ProjectImgContainer3">
+                    <img src="../assets/C3/PNC/batre.png" alt="" class="ProjectImage" id="ThirdProject1">
+                </div>
+                <div class="ProjectImgContainer3">
+                    <img src="../assets/C3/PNC/maze.png" alt="" class="ProjectImage" id="ThirdProject2">
+                </div>
+                <div class="ProjectImgContainer3">
+                    <img src="../assets/C3/PNC/movie.png" alt="" class="ProjectImage" id="ThirdProject3">
+                </div>
+                <script src="slider.js"></script>
+
+                <div class="descContainer">
+                    <p class="ProjectDescription">PNC Challenge 2023  -<br>Time Machine, Dungeon Of Hopeless, Movie Theater Reservation</p>
+                </div>
+                
+                <button class="ProjectButton" onclick="thirdProject()">Click Here!</button>
+            </div>
+            
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <section id="C4">
+        <div class="contactcontainer">
+            <div class="K1">
+                <div>
+                    <i class="fa-regular fa-envelope" style="color: #000000;"></i>
+                    <h2>valentinotriadi2004@gmail.com</h2>
+                </div>
+                <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+            </div>
+            <!-- <div style="background-color: green;">
+                <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+                <h2>+62 851-5672-6009</h2>
+            </div> -->
+            <div class="K2">
+                <div>
+                    <i class="fa-brands fa-github" style="color: #000000; cursor: pointer;" onclick="github()"></i>
+                    <h2>ValentinoTriadi</h2>
+                </div>
+                <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+            </div>
+            <div class="K3">
+                <div>
+                    <i class="fa-brands fa-linkedin-in" style="color: #000000; cursor: pointer;" onclick="linkedin()"></i>
+                    <h2>Valentino Triadi</h2>
+                </div>
+                <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+            </div>
+            <div class="K4">
+                <div>
+                    <i class="fa-brands fa-instagram" style="color: #000000; cursor: pointer;" onclick="instagram()"></i>
+                    <h2>@valentinotriadi</h2>
+                </div>
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
